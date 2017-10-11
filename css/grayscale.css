@@ -125,7 +125,6 @@ a:focus {
   display: table;
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
   padding: 100px 0;
   text-align: center;
   color: white;
@@ -153,7 +152,6 @@ a:focus {
 @media (min-width: 768px) {
   .intro {
     height: 100%;
-    margin-bottom: 30px;
     padding: 0;
   }
   .intro .intro-body .brand-heading {
