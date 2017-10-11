@@ -15,7 +15,10 @@ html {
   height: 100%;
 }
 h1,
-h2,
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
 h3,
 h4,
 h5,
@@ -28,18 +31,18 @@ h6 {
 }
 p {
   margin: 0 0 25px;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 1.5;
 }
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.6;
   }
 }
 a {
-  color: #06B9BA;
+  color: #57CBA0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -47,7 +50,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #035757;
+  color: #2c906b;
 }
 .light {
   font-weight: 400;
@@ -57,7 +60,7 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Lato";
-  background-color: #06B9BA;
+  background-color: #57CBA0;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -70,6 +73,7 @@ a:focus {
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
+  font-size: 1em;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -113,7 +117,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #06B9BA;
+    background: #57CBA0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
@@ -121,15 +125,20 @@ a:focus {
   display: table;
   width: 100%;
   height: auto;
+  margin-bottom: 30px;
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/bg-gradient.png) no-repeat bottom center scroll;
-  background-color: #eaf2f2;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background: #57CBA0;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#C9FF6F, #57CBA0);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#C9FF6F, #57CBA0);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#C9FF6F, #57CBA0);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#C9FF6F, #57CBA0);
+  /* Standard syntax */
 }
 .intro .intro-body {
   display: table-cell;
@@ -144,10 +153,11 @@ a:focus {
 @media (min-width: 768px) {
   .intro {
     height: 100%;
+    margin-bottom: 30px;
     padding: 0;
   }
   .intro .intro-body .brand-heading {
-    font-size: 48px;
+    font-size: 36px;
   }
   .intro .intro-body .intro-text {
     font-size: 20px;
@@ -218,13 +228,13 @@ a:focus {
   }
 }
 .content-section {
-  padding-top: 100px;
+  padding-top: 20px;
 }
-.projects-section {
+.studio-section {
   width: 100%;
   padding: 50px 0;
   color: #778A8B;
-  background-color: #eaf2f2;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -234,7 +244,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: #778A8B;
-  background-color: #eaf2f2;
+  background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -247,7 +257,7 @@ a:focus {
 }
 @media (min-width: 767px) {
   .content-section {
-    padding-top: 250px;
+    padding-top: 50px;
   }
   .projects-section {
     padding: 100px 0;
@@ -267,16 +277,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #06B9BA;
-  color: #06B9BA;
+  border: 1px solid #57CBA0;
+  color: #57CBA0;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #06B9BA;
+  border: 1px solid #57CBA0;
   outline: none;
   color: black;
-  background-color: #06B9BA;
+  background-color: #57CBA0;
 }
 ul.banner-social-buttons {
   margin-top: 0;
